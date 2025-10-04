@@ -1,0 +1,124 @@
+<script src="scripts/translations.js"></script>
+<link rel="stylesheet" href="style.css" />
+<header>
+  <nav class="navbar">
+    <div class="navbar-logo">
+      <a href="/">
+        <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2562.308 884.893">
+          <defs>
+            <style>
+              .cls-1 {
+                letter-spacing: -.039em;
+              }
+        
+              .cls-2 {
+                font-family: Montserrat-Bold, Montserrat;
+                font-size: 382px;
+                font-variation-settings: 'wght' 700;
+                font-weight: 700;
+              }
+        
+              .cls-3 {
+                letter-spacing: -.057em;
+              }
+        
+              .cls-4 {
+                font-family: Montserrat-Medium, Montserrat;
+                font-size: 154px;
+                font-variation-settings: 'wght' 500;
+                font-weight: 500;
+              }
+        
+              .cls-5 {
+                letter-spacing: -.039em;
+              }
+        
+              .cls-6 {
+                letter-spacing: -.046em;
+              }
+        
+              .cls-7 {
+                letter-spacing: -.026em;
+              }
+        
+              .cls-8 {
+                letter-spacing: -.037em;
+              }
+            </style>
+          </defs>
+          <g>
+            <rect x="0" y="49.313" width="239.425" height="378.481"/>
+            <rect x="279.608" y="49.313" width="239.425" height="378.481"/>
+            <rect x="559.216" y="49.313" width="239.425" height="169.233"/>
+            <rect x="559.216" y="258.561" width="239.425" height="169.233"/>
+            <rect y="467.81" width="239.425" height="169.233"/>
+            <rect x="0" y="677.058" width="239.425" height="169.233"/>
+            <polygon points="318.954 467.827 519.032 467.827 519.032 803.775 318.954 467.827"/>
+            <polygon points="279.608 508.659 279.608 846.291 478.849 846.291 279.608 508.659"/>
+            <polygon points="599.399 467.81 758.457 467.81 678.928 586.19 599.399 467.81"/>
+            <polygon points="559.216 508.659 559.216 846.291 658.836 846.291 658.836 654.911 559.216 508.659"/>
+            <polygon points="798.642 508.659 798.642 846.291 699.022 846.291 699.022 654.911 798.642 508.659"/>
+          </g>
+          <text class="cls-2" transform="translate(931.563 380.074)"><tspan class="cls-7" x="0" y="0">DCEE</tspan><tspan class="cls-8" x="1065.004" y="0">N</tspan><tspan class="cls-7" x="1359.529" y="0">Y</tspan></text>
+          <text class="cls-4" transform="translate(960.83 620.695)"><tspan class="cls-1" x="0" y="0">In</tspan><tspan class="cls-3" x="140.602" y="0">t</tspan><tspan class="cls-5" x="195.579" y="0">e</tspan><tspan class="cls-6" x="283.82" y="0">r</tspan><tspan class="cls-1" x="339.877" y="0">ior Design Studio</tspan></text>
+        </svg>
+      </a>
+    </div>
+
+    <div class="navbar-links">
+      <!-- Projects Dropdown -->
+      <div class="nav-item-container" id="projects-nav-item">
+        <button class="nav-link" id="projects-btn" data-translate="projects"></button>
+        <div class="dropdown-wrapper">
+          <div class="dropdown-menu" id="projects-dropdown">
+            <a class="dropdown-link" href='private-projects'>
+              <span data-translate="privateProjects"></span>
+            </a>
+            <a class="dropdown-link" href='public-projects'>
+              <span data-translate="publicProjects"></span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Other Navigation Links -->
+      <a class="nav-link" data-translate="aboutUs" href='about-us'></a>
+      <a class="nav-link" data-translate="services" href='services'></a>
+      <a class="nav-link" data-translate="contacts" href='contacts'></a>
+      <!-- Language Selection Dropdown -->
+      <div class="nav-item-container" id="language-container">
+        <a class="nav-link" id="lge-btn">
+          <span data-translate="langauge"></span>
+        </a>
+        <div class="dropdown-lge-menu">
+          <a class="dropdown-link" data-lang="en" onclick="switchLanguage('en')">
+            EN
+          </a>
+          <a class="dropdown-link" data-lang="fr" onclick="switchLanguage('fr')">
+            FR
+          </a>
+          <a class="dropdown-link" data-lang="ar" onclick="switchLanguage('ar')">
+            AR
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <script>
+    // Function to toggle the visibility of project links on small screens
+    function toggleDropdown() {
+      var dropdown = document.getElementById("projects-dropdown");
+
+      // Toggle the dropdown visibility by adding/removing a class
+      if (dropdown.classList.contains("show-dropdown")) {
+        dropdown.classList.remove("show-dropdown"); // Hide if currently visible
+      } else {
+        dropdown.classList.add("show-dropdown"); // Show if currently hidden
+      }
+    }
+
+    // Add event listener to the "Projects" button
+    document
+      .getElementById("projects-btn")
+      .addEventListener("click", toggleDropdown);
+  </script>
+</header>

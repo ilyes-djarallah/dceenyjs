@@ -1,0 +1,210 @@
+    <!-- Navigation Bar -->
+    <!-- <header>
+      <nav class="navbar">
+        <div class="navbar-logo">
+          <a href="index.html">
+            <img src="assets/images/DCEENY.png" alt="Logo" id="logo" />
+          </a>
+        </div> -->
+
+        <!-- Navigation Links -->
+        <!-- <div class="navbar-links">
+          <div class="nav-item-container" id="projects-container">
+            <button class="nav-link" id="projects-btn">PROJECTS</button> -->
+
+            <!-- Dropdown Menu -->
+            <!-- <div class="dropdown-menu" id="projects-dropdown">
+              <button class="dropdown-link"onclick="location.href='pages/private-projects.html'">Private Projects</button>
+              <button class="dropdown-link"onclick="location.href='pages/public-projects.html'">Public Projects</button>
+            </div>
+          </div>
+
+          <button
+            class="nav-link"
+            id="about-us-btn"
+            onclick="location.href='pages/about-us.html'"
+          >
+            ABOUT US
+          </button>
+          <button
+            class="nav-link"
+            id="services-btn"
+            onclick="location.href='pages/services.html'"
+          >
+            SERVICES
+          </button>
+          <button
+            class="nav-link"
+            id="contacts"
+            onclick="location.href='pages/contacts.html'"
+          >
+            CONTACTS
+          </button>
+          <button class="nav-link" id="lge-btn">FR</button>
+        </div>
+      </nav>
+    </header> -->
+    <!-- The End of Navigation Bar -->
+
+
+
+// // Language Switcher Function
+// async function changeLanguage(lang) {
+//   const translations = await fetchTranslations();
+
+//   const langBtn = document.getElementById("lang-btn");
+//   const projectsBtn = document.getElementById("projects-btn");
+//   const aboutUsLink = document.getElementById("about-us-link");
+//   const servicesLink = document.getElementById("services-link");
+//   const contactsLink = document.getElementById("contacts-link");
+
+//   if (lang === "en") {
+//     langBtn.textContent = "EN";
+//     projectsBtn.textContent = translations.en.projects;
+//     aboutUsLink.textContent = translations.en.about_us;
+//     servicesLink.textContent = translations.en.services;
+//     contactsLink.textContent = translations.en.contacts;
+//   } else if (lang === "fr") {
+//     langBtn.textContent = "FR";
+//     projectsBtn.textContent = translations.fr.projects;
+//     aboutUsLink.textContent = translations.fr.about_us;
+//     servicesLink.textContent = translations.fr.services;
+//     contactsLink.textContent = translations.fr.contacts;
+//   } else if (lang === "ar") {
+//     langBtn.textContent = "AR";
+//     projectsBtn.textContent = translations.ar.projects;
+//     aboutUsLink.textContent = translations.ar.about_us;
+//     servicesLink.textContent = translations.ar.services;
+//     contactsLink.textContent = translations.ar.contacts;
+//   }
+// }
+
+
+
+    <div class="team-container">
+      <!-- First row: You and your colleague -->
+      <div class="team-row">
+        <div class="team-member">
+          <img
+            src="assets/images/teeam members/rostom.jpg"
+            alt="Your Name"
+            class="team-photo"
+          />
+          <div class="team-info">
+            <h3 class="team-name" data-translate="rostom"></h3>
+            <p class="team-occupation" data-translate="cEO"></p>
+          </div>
+        </div>
+        <div class="team-member">
+          <img
+            src="assets/images/teeam members/ilyes.jpg"
+            alt="Colleague Name"
+            class="team-photo"
+          />
+          <div class="team-info">
+            <h3 class="team-name" data-translate="ilyes"></h3>
+            <p class="team-occupation" data-translate="cOO"></p>
+          </div>
+        </div>
+      </div>
+      <!-- Second row: Rest of the team -->
+      <div class="team-row">
+        <div class="team-member">
+          <img
+            src="assets/images/teeam members/raouf.jpg"
+            alt="Team Member 1"
+            class="team-photo"
+          />
+          <div class="team-info">
+            <h3 class="team-name" data-translate="raouf"></h3>
+            <p class="team-occupation" data-translate="interiorArchitect"></p>
+          </div>
+        </div>
+        <div class="team-member">
+          <img
+            src="assets/images/teeam members/haithem.jpg"
+            alt="Team Member 2"
+            class="team-photo"
+          />
+          <div class="team-info">
+            <h3 class="team-name" data-translate="haithem"></h3>
+            <p class="team-occupation" data-translate="architectureDrafter"></p>
+          </div>
+        </div>
+        <div class="team-member">
+          <img
+            src="assets/images/teeam members/youcef.jpg"
+            alt="Team Member 3"
+            class="team-photo"
+          />
+          <div class="team-info">
+            <h3 class="team-name" data-translate="youcef"></h3>
+            <p class="team-occupation" data-translate="projectManager"></p>
+          </div>
+        </div>
+        <!-- Add more team members as needed -->
+      </div>
+    </div>
+    
+      <div class="grayed-Container">
+    <div style="height: 100px"></div>
+    <!-- Adjust height as needed -->
+    <div class="social-media-text">
+      <h1 class="main-title">Dceeny Studio</h1>
+      <div style="height: 20px"></div>
+      <p class="description3" data-translate="usDc"></p>
+    </div>
+  </div>
+  
+
+      <div class="icon-item-small-ones">
+      <img src="https://static.tildacdn.pro/lib/tildaicon/30303234-3031-4632-b665-663432663337/cowork_mac.svg"
+        alt="Icon 6" class="small-icon-image-services" />
+      <p class="icon-title-services" data-translate="visualization">
+        Title 4
+      </p>
+    </div>
+    <div class="icon-item-small-ones">
+      <img src="https://static.tildacdn.pro/lib/tildaicon/32353130-3334-4130-a461-336334646331/tile.svg" alt="Icon 7"
+        class="small-icon-image-services" />
+      <p class="icon-title-services" data-translate="packPlan">Title 4</p>
+    </div>
+        <div class="icon-item-small-ones">
+      <img src="https://static.tildacdn.pro/lib/tildaicon/31383063-3636-4465-b765-623939643934/design.svg" alt="Icon 5"
+        class="small-icon-image-services" />
+      <p class="icon-title-services" data-translate="sampleApproval">
+        Title 4
+      </p>
+    </div>
+        <div class="icon-item-small-ones">
+      <img src="https://static.tildacdn.pro/lib/tildaicon/32353130-3334-4130-a461-336334646331/tile.svg" alt="Icon 7"
+        class="small-icon-image-services" />
+      <p class="icon-title-services" data-translate="packPlan">Title 4</p>
+    </div>
+        <div class="icon-item-small-ones">
+      <img
+        src="https://static.tildacdn.pro/lib/tildaicon/62386436-6131-4363-b233-386236663064/Tilda_Icons_39_IT_design.svg"
+        alt="Icon 4" class="small-icon-image-services" />
+      <p class="icon-title-services" data-translate="planningSolution">
+        Title 4
+      </p>
+    </div>
+        <div class="icon-item-small-ones">
+      <img src="https://static.tildacdn.pro/lib/tildaicon/31383063-3636-4465-b765-623939643934/design.svg" alt="Icon 5"
+        class="small-icon-image-services" />
+      <p class="icon-title-services" data-translate="sampleApproval">
+        Title 4
+      </p>
+    </div>
+        <div class="icon-item-small-ones">
+      <img src="https://static.tildacdn.pro/lib/tildaicon/65336162-6138-4435-b533-633832346635/touragency_group.svg"
+        alt="Icon 4" class="small-icon-image-services" />
+      <p class="icon-title-services" data-translate="contractorSearchAndCoordination"></p>
+    </div>
+    <div class="icon-item-small-ones">
+      <img src="https://static.tildacdn.pro/lib/tildaicon/39373461-6562-4766-a462-343536653538/3st_van.svg" alt="Icon 5"
+        class="small-icon-image-services" />
+      <p class="icon-title-services" data-translate="deliveryOrganization">
+        Title 4
+      </p>
+    </div>
