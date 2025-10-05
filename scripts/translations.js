@@ -8,7 +8,7 @@ const translations = {
     contacts: "Contacts",
     langauge: "EN",
     prvapartment: "Private Apartment",
-    livingRoom: "Living Room", // Add new entry
+    livingRoom: "Living Room",
     servicesUp: "SERVICES",
     servicesUpDescription:
       "We specialize in creating private and public interiors. We provide a full range of services: beginning with the development of a design project and ending with the maintenance of construction work and object assembly.",
@@ -195,7 +195,30 @@ const translations = {
     hurghadaSurf: "- 150 m² -",
     hurghadaInfo: "Type: interior | Location: Hurghada, Egypt | Surface: 150 m²",
     privateHurghada: "Restaurent - Hurghada",
+
+
+
+    cityKoubaSurf: "- 55 m² -",
+    cityKoubaInfo: "Type: interior | Location: City Kouba, Annaba | Surface: 55 m²",
   },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   fr: {
     projects: "Projets",
     privateProjects: "Projets privés",
@@ -399,7 +422,28 @@ const translations = {
     hurghadaSurf: "- 150 m² -",
     hurghadaInfo: "Type: intérieure | Location: Hurghada, Égypte | Surface: 150 m²",
     privateHurghada: "Restaurent - Hurghada",
+
+    
+    cityKoubaSurf: "- 55 m² -",
+    cityKoubaInfo:
+      "Type: intérieure | Location: City Kouba, Annaba | Surface: 55 m²",
   },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   ar: {
     projects: "المشاريع",
     privateProjects: "مشاريع خاصة",
@@ -592,6 +636,11 @@ const translations = {
     hurghadaSurf: "-  150 م² -",
     hurghadaInfo: "النوع: داخلية | المنطقة: الغردقة، مصر | المساحة: 150 م²",
     privateHurghada: "مطعم - الغردقة",
+
+
+
+    cityKoubaSurf: "- 55 م² -",
+    cityKoubaInfo: "النوع: داخلية | المنطقة: حي قبة، عنابة | المساحة: 55 م²",
   },
 };
 
