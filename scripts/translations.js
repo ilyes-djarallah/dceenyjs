@@ -197,9 +197,9 @@ const translations = {
     privateHurghada: "Restaurent - Hurghada",
 
 
-
-    cityKoubaSurf: "- 55 m² -",
-    cityKoubaInfo: "Type: interior | Location: City Kouba, Annaba | Surface: 55 m²",
+    belvedere: "Belvedere",
+    belvedereSurf: "- 55 m² -",
+    belvedereInfo: "Type: interior | Location: Belvedere, Annaba | Surface: 55 m²",
   },
 
 
@@ -424,9 +424,9 @@ const translations = {
     privateHurghada: "Restaurent - Hurghada",
 
     
-    cityKoubaSurf: "- 55 m² -",
-    cityKoubaInfo:
-      "Type: intérieure | Location: City Kouba, Annaba | Surface: 55 m²",
+    belvedere: "Belvédère",
+    belvedereSurf: "- 55 m² -",
+    belvedereInfo: "Type: intérieure | Location: Belvédère, Annaba | Surface: 55 m²",
   },
 
 
@@ -638,9 +638,9 @@ const translations = {
     privateHurghada: "مطعم - الغردقة",
 
 
-
-    cityKoubaSurf: "- 55 م² -",
-    cityKoubaInfo: "النوع: داخلية | المنطقة: حي قبة، عنابة | المساحة: 55 م²",
+    belvedereurf: "بلفودار",
+    belvedereurf: "- 55 م² -",
+    belvedereInfo: "النوع: داخلية | المنطقة: بلفودار، عنابة | المساحة: 55 م²",
   },
 };
 
