@@ -200,6 +200,13 @@ const translations = {
     belvedere: "Belvedere",
     belvedereSurf: "- 55 m² -",
     belvedereInfo: "Type: interior | Location: Belvedere, Annaba | Surface: 55 m²",
+
+
+
+    kantaraTwo: "El Kantara -2-",
+    kantaraTwoSurf: "- 25 m² -",
+    kantaraTwoInfo:
+      "Type: interior | Location: El Kantara, Biskra | Surface: 25 m²",
   },
 
 
@@ -427,6 +434,14 @@ const translations = {
     belvedere: "Belvédère",
     belvedereSurf: "- 55 m² -",
     belvedereInfo: "Type: intérieure | Location: Belvédère, Annaba | Surface: 55 m²",
+
+
+
+
+    kantaraTwo: "El Kantara -2-",
+    kantaraTwoSurf: "- 25 m² -",
+    kantaraTwoInfo:
+      "Type: intérieure | Location: El Kantara , Biskra | Surface: 25 m²",
   },
 
 
@@ -641,8 +656,23 @@ const translations = {
     belvedereurf: "بلفودار",
     belvedereurf: "- 55 م² -",
     belvedereInfo: "النوع: داخلية | المنطقة: بلفودار، عنابة | المساحة: 55 م²",
+
+
+    kantaraTwo: "-2- القنطرة",
+    kantaraTwoSurf: "- 25 م² -",
+    kantaraTwoInfo: "النوع: داخلية | المنطقة: القنطرة، بسكرة | المساحة: 25 م²",
+
+
+
   },
 };
+
+
+
+
+
+
+
 
 function applyTranslations(language) {
   const elements = document.querySelectorAll(
