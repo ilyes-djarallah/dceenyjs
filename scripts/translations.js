@@ -213,7 +213,14 @@ const translations = {
     bouzourane: "Bouzourane",
     bouzouraneSurf: "- 30 m² -",
     bouzouraneInfo:
-      "Type: interior | Location: Bouzourane, batna | Surface: 30 m²",
+      "Type: interior | Location: Bouzourane, Batna | Surface: 30 m²",
+
+
+    
+    draria: "Draria",
+    drariaSurf: "- 16 m² -",
+    drariaInfo:
+      "Type: interior | Location: Draria, Algiers | Surface: 16 m²",
   },
 
 
@@ -457,6 +464,13 @@ const translations = {
     bouzouraneInfo:
       "Type: intérieure | Location: Bouzourane, Batna | Surface: 30 m²",
 
+
+
+    draria: "Draria",
+    drariaSurf: "- 16 m² -",
+    drariaInfo:
+      "Type: intérieure | Location: Draria, Alger | Surface: 16 m²",
+
   },
 
 
@@ -683,6 +697,12 @@ const translations = {
     bouzourane: "بوزوران",
     bouzouraneSurf: "- 30 م² -",
     bouzouraneInfo: "النوع: داخلية | المنطقة: بوزوران، باتنة | المساحة: 30 م²",
+
+
+
+    draria: "درارية",
+    drariaSurf: "- 16 م² -",
+    drariaInfo: "النوع: داخلية | المنطقة: درارية، الجزائر العاصمة | المساحة: 16 م²",
   },
 };
 
