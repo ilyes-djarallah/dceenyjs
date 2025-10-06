@@ -207,6 +207,13 @@ const translations = {
     kantaraTwoSurf: "- 25 m² -",
     kantaraTwoInfo:
       "Type: interior | Location: El Kantara, Biskra | Surface: 25 m²",
+
+
+    
+    bouzourane: "Bouzourane",
+    bouzouraneSurf: "- 30 m² -",
+    bouzouraneInfo:
+      "Type: interior | Location: Bouzourane, batna | Surface: 30 m²",
   },
 
 
@@ -441,7 +448,15 @@ const translations = {
     kantaraTwo: "El Kantara -2-",
     kantaraTwoSurf: "- 25 m² -",
     kantaraTwoInfo:
-      "Type: intérieure | Location: El Kantara , Biskra | Surface: 25 m²",
+      "Type: intérieure | Location: El Kantara, Biskra | Surface: 25 m²",
+
+
+
+    bouzourane: "Bouzourane",
+    bouzouraneSurf: "- 30 m² -",
+    bouzouraneInfo:
+      "Type: intérieure | Location: Bouzourane, Batna | Surface: 30 m²",
+
   },
 
 
@@ -664,6 +679,10 @@ const translations = {
 
 
 
+
+    bouzourane: "بوزوران",
+    bouzouraneSurf: "- 30 م² -",
+    bouzouraneInfo: "النوع: داخلية | المنطقة: بوزوران، باتنة | المساحة: 30 م²",
   },
 };
 
