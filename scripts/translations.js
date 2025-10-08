@@ -144,8 +144,8 @@ const translations = {
     dallasSurf: "- 16 m² -",
     dallasInfo: "Type: interior | Location: Dallas, Setif | Surface: 16 m²",
     tazoult: "Tazoult",
-    tazoultSurf: "- 43 m² -",
-    tazoultInfo: "Type: interior | Location: Tazoult, Batna | Surface: 43 m²",
+    tazoultSurf: "- 80 m² -",
+    tazoultInfo: "Type: interior | Location: Tazoult, Batna | Surface: 80 m²",
     cityKouba: "City Kouba",
     citySurf: "- 43 m² -",
     cityInfo: "Type: interior | Location: City Kouba, Annaba | Surface: 43 m²",
@@ -240,6 +240,12 @@ const translations = {
     ainToutaSurf: "- 30 m² -",
     ainToutaInfo:
       "Type: interior | Location: Ain Touta, Batna | Surface: 30 m²",
+
+
+
+    tazoultTwo: "Tazoult -2-",
+    tazoultTwoSurf: "- 400 m² -",
+    tazoultTwoInfo: "Type: exterior | Location: Tazoult, Batna | Surface: 400 m²",
   },
 
 
@@ -510,6 +516,14 @@ const translations = {
     ainToutaSurf: "- 30 m² -",
     ainToutaInfo:
       "Type: intérieure | Location: Ain Touta, Batna | Surface: 30 m²",
+
+
+
+
+    tazoultTwo: "Tazoult -2-",
+    tazoultTwoSurf: "- 400 m² -",
+    tazoultTwoInfo:
+      "Type: extérieure | Localisation: Tazoult, Batna | Surface: 400 m²",
   },
 
 
@@ -668,8 +682,8 @@ const translations = {
     dallasSurf: "- 16 م² -",
     dallasInfo: "النوع: داخلية | المنطقة: دالاس، سطيف | المساحة: 16 م²",
     tazoult: "تازولت",
-    tazoultSurf: "- 43 م² -",
-    tazoultInfo: "النوع: داخلية | المنطقة: تازولت، باتنة | المساحة: 43 م²",
+    tazoultSurf: "- 80 م² -",
+    tazoultInfo: "النوع: داخلية | المنطقة: تازولت، باتنة | المساحة: 80 م²",
     cityKouba: "حي قبة",
     citySurf: "- 43 م² -",
     cityInfo: "النوع: داخلية | المنطقة: حي قبة، عنابة | المساحة: 43 م²",
@@ -759,6 +773,12 @@ const translations = {
     ainTouta: "عين التوتة",
     ainToutaSurf: "- 30 م² -",
     ainToutaInfo: "النوع: داخلية | المنطقة: عين التوتة، باتنة | المساحة: 30 م²",
+
+
+
+    tazoult: " -2- تازولت",
+    tazoultSurf: "- 400 م² -",
+    tazoultInfo: "النوع: خارجية | المنطقة: تازولت، باتنة | المساحة: 400 م²",
   },
 };
 
