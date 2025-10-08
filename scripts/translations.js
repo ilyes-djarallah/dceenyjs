@@ -230,9 +230,16 @@ const translations = {
       "Type: interior | Location: Sidi Mabrouk, Constantine | Surface: 12 m²",
 
 
-    
+    belvedereSauna:"belvedere -2-",
     belvedereSaunaSurf: "- 60 m² -",
     belvedereSaunaInfo: "Type: interior | Location: Belvedere, Annaba | Surface: 60 m²",
+
+
+
+    ainTouta: "Ain Touta",
+    ainToutaSurf: "- 30 m² -",
+    ainToutaInfo:
+      "Type: interior | Location: Ain Touta, Batna | Surface: 30 m²",
   },
 
 
@@ -491,10 +498,18 @@ const translations = {
       "Type: intérieure | Location: Sidi Mabrouk, Constantine | Surface: 16 m²",
 
 
-
+    belvedereSauna: "Belvédère -2-",
     belvedereSaunaSurf: "- 60 m² -",
     belvedereSaunaInfo:
-      "Type: intérieure | Location: Sidi Mabrouk, Constantine | Surface: 60 m²",
+      "Type: intérieure | Location: Belvédère, Constantine | Surface: 60 m²",
+
+
+
+
+    ainTouta: "Ain Touta",
+    ainToutaSurf: "- 30 m² -",
+    ainToutaInfo:
+      "Type: intérieure | Location: Ain Touta, Batna | Surface: 30 m²",
   },
 
 
@@ -735,9 +750,15 @@ const translations = {
     sidiMabroukInfo: "النوع: داخلية | المنطقة: سيدي مبروك، قسنطينة | المساحة: 12 م²",
 
 
-
+    belvedereSauna: "بلفودار -2-",
     belvedereSaunaSurf: "- 60 م² -",
-    belvedereSaunaInfo: "النوع: داخلية | المنطقة: سيدي مبروك، قسنطينة | المساحة: 60 م²",
+    belvedereSaunaInfo: "النوع: داخلية | المنطقة: بلفودار، قسنطينة | المساحة: 60 م²",
+
+
+
+    ainTouta: "عين التوتة",
+    ainToutaSurf: "- 30 م² -",
+    ainToutaInfo: "النوع: داخلية | المنطقة: عين التوتة، باتنة | المساحة: 30 م²",
   },
 };
 
