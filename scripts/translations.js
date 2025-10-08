@@ -228,6 +228,11 @@ const translations = {
     sidiMabroukSurf: "- 12 m² -",
     sidiMabroukInfo:
       "Type: interior | Location: Sidi Mabrouk, Constantine | Surface: 12 m²",
+
+
+
+    belvedereSaunaSurf: "- 60 m² -",
+    belvedereSaunaInfo: "Type: interior | Location: Belvedere, Annaba | Surface: 60 m²",
   },
 
 
