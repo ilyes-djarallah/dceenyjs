@@ -776,9 +776,9 @@ const translations = {
 
 
 
-    tazoult: " -2- تازولت",
-    tazoultSurf: "- 400 م² -",
-    tazoultInfo: "النوع: خارجية | المنطقة: تازولت، باتنة | المساحة: 400 م²",
+    tazoultTwo: " -2- تازولت",
+    tazoultTwoSurf: "- 400 م² -",
+    tazoultTwoInfo: "النوع: خارجية | المنطقة: تازولت، باتنة | المساحة: 400 م²",
   },
 };
 
