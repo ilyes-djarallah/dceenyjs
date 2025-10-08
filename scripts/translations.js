@@ -408,9 +408,9 @@ const translations = {
     dallasInfo:
       "Type: intérieure | Localisation: Dallas, Setif | Surface: 16 m²",
     tazoult: "Tazoult",
-    tazoultSurf: "- 43 m² -",
+    tazoultSurf: "- 80 m² -",
     tazoultInfo:
-      "Type: intérieure | Localisation: Tazoult, Batna | Surface: 43 m²",
+      "Type: intérieure | Localisation: Tazoult, Batna | Surface: 80 m²",
     cityKouba: "City Kouba",
     citySurf: "- 43 m² -",
     cityInfo:
