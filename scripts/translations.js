@@ -221,6 +221,13 @@ const translations = {
     drariaSurf: "- 16 m² -",
     drariaInfo:
       "Type: interior | Location: Draria, Algiers | Surface: 16 m²",
+
+
+
+    sidiMabrouk: "Sidi Mabrouk",
+    sidiMabroukSurf: "- 12 m² -",
+    sidiMabroukInfo:
+      "Type: interior | Location: Sidi Mabrouk, Constantine | Surface: 12 m²",
   },
 
 
@@ -471,6 +478,12 @@ const translations = {
     drariaInfo:
       "Type: intérieure | Location: Draria, Alger | Surface: 16 m²",
 
+
+
+    sidiMabrouk: "Sidi Mabrouk",
+    sidiMabroukSurf: "- 12 m² -",
+    sidiMabroukInfo:
+      "Type: intérieure | Location: Sidi Mabrouk, Constantine | Surface: 16 m²",
   },
 
 
@@ -703,6 +716,12 @@ const translations = {
     draria: "درارية",
     drariaSurf: "- 16 م² -",
     drariaInfo: "النوع: داخلية | المنطقة: درارية، الجزائر العاصمة | المساحة: 16 م²",
+
+
+
+    sidiMabrouk: "سيدي مبروك",
+    sidiMabroukSurf: "- 12 م² -",
+    sidiMabroukInfo: "النوع: داخلية | المنطقة: سيدي مبروك، قسنطينة | المساحة: 12 م²",
   },
 };
 
