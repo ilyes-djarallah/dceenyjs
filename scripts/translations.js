@@ -230,7 +230,7 @@ const translations = {
       "Type: interior | Location: Sidi Mabrouk, Constantine | Surface: 12 m²",
 
 
-
+    
     belvedereSaunaSurf: "- 60 m² -",
     belvedereSaunaInfo: "Type: interior | Location: Belvedere, Annaba | Surface: 60 m²",
   },
@@ -489,6 +489,12 @@ const translations = {
     sidiMabroukSurf: "- 12 m² -",
     sidiMabroukInfo:
       "Type: intérieure | Location: Sidi Mabrouk, Constantine | Surface: 16 m²",
+
+
+
+    belvedereSaunaSurf: "- 60 m² -",
+    belvedereSaunaInfo:
+      "Type: intérieure | Location: Sidi Mabrouk, Constantine | Surface: 60 m²",
   },
 
 
@@ -727,6 +733,11 @@ const translations = {
     sidiMabrouk: "سيدي مبروك",
     sidiMabroukSurf: "- 12 م² -",
     sidiMabroukInfo: "النوع: داخلية | المنطقة: سيدي مبروك، قسنطينة | المساحة: 12 م²",
+
+
+
+    belvedereSaunaSurf: "- 60 م² -",
+    belvedereSaunaInfo: "النوع: داخلية | المنطقة: سيدي مبروك، قسنطينة | المساحة: 60 م²",
   },
 };
 
