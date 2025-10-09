@@ -248,10 +248,13 @@ const translations = {
     tazoultTwoInfo: "Type: exterior | Location: Tazoult, Batna | Surface: 400 m²",
 
 
-    privateIndonesiaa: "Private apartment - Jakarta",
+    privateIndonesiaa: "Private apartment - Indonesia",
     jakarta: "Jakarta",
     jakartaSurf: "- 70 m² -",
     jakartaInfo: "Type: interior | Location: Jakarta, Indonesia | Surface: 70 m²",
+
+
+    privateApartIndonesia: "Private apartment - Indonesia",
   },
 
 
@@ -532,7 +535,7 @@ const translations = {
       "Type: extérieure | Localisation: Tazoult, Batna | Surface: 400 m²",
 
 
-    privateIndonesiaa: "Appartement privé - Jakarta",
+    privateIndonesiaa: "Appartement privé - Indonésie",
     jakarta: "jakarta",
     jakartaSurf: "- 70 m² -",
     jakartaInfo: "Type: intérieure | Location: Jakarta, Indonésie | Surface: 70 m²",
@@ -793,10 +796,15 @@ const translations = {
     tazoultTwoInfo: "النوع: خارجية | المنطقة: تازولت، باتنة | المساحة: 400 م²",
 
 
-    privateIndonesiaa: "شقة خاصة - جاكارتا",
+    privateIndonesiaa: "شقة خاصة - إندونيسيا",
     jakarta: "جاكارتا",
     jakartaSurf: "- 70 م² -",
     jakartaInfo: "النوع: داخلية | المنطقة: جاكارتا، إندونيسيا | المساحة: 70 م²",
+
+
+
+
+
   },
 };
 
