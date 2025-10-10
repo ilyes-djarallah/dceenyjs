@@ -255,6 +255,13 @@ const translations = {
 
 
     privateApartIndonesia: "Private apartment - Indonesia",
+
+
+
+
+    cheragaTwo: "Chéraga -2-",
+    cheragaTwoSurf: "- 50 m² -",
+    cheragaTwoInfo: "Type: interior | Location: Chéraga, Algiers | Surface: 50 m²",
   },
 
 
@@ -539,6 +546,14 @@ const translations = {
     jakarta: "jakarta",
     jakartaSurf: "- 70 m² -",
     jakartaInfo: "Type: intérieure | Location: Jakarta, Indonésie | Surface: 70 m²",
+
+
+
+
+    cheragaTwo: "Chéraga -2-",
+    cheragaTwoSurf: "- 50 m² -",
+    cheragaTwoInfo:
+      "Type: intérieure | Localisation: Chéraga, Alger | Surface: 150 m²",
   },
 
 
@@ -802,6 +817,11 @@ const translations = {
     jakartaInfo: "النوع: داخلية | المنطقة: جاكارتا، إندونيسيا | المساحة: 70 م²",
 
 
+
+    cheragaTwo: "شراقة-2- ",
+    cheragaTwoSurf: "- 50 م² -",
+    cheragaTwoInfo:
+      "النوع: داخلية | المنطقة: شراقة، الجزائر العاصمة | المساحة: 50 م²",
   },
 };
 
