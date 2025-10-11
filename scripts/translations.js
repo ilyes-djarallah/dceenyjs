@@ -262,6 +262,9 @@ const translations = {
     cheragaTwo: "Chéraga -2-",
     cheragaTwoSurf: "- 50 m² -",
     cheragaTwoInfo: "Type: interior | Location: Chéraga, Algiers | Surface: 50 m²",
+
+
+    academy: "Academy",
   },
 
 
@@ -554,6 +557,9 @@ const translations = {
     cheragaTwoSurf: "- 50 m² -",
     cheragaTwoInfo:
       "Type: intérieure | Localisation: Chéraga, Alger | Surface: 150 m²",
+
+
+    academy: "Académie",
   },
 
 
@@ -822,6 +828,10 @@ const translations = {
     cheragaTwoSurf: "- 50 م² -",
     cheragaTwoInfo:
       "النوع: داخلية | المنطقة: شراقة، الجزائر العاصمة | المساحة: 50 م²",
+
+
+
+    academy: "الأكاديمية",
   },
 };
 
