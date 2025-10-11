@@ -168,10 +168,10 @@ body.font-ar .submit-button {
   z-index: 100;
 }
 .navbar-logo {
-  display: flex; /* Ensure content is centered */
-  align-items: center; /* Vertically align logo */
-  justify-content: center; /* Center the logo horizontally */
-  height: 70px; /* Let the height adjust naturally */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70px; 
   width: 200px;
   padding: auto 0px;
 }
