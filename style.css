@@ -175,6 +175,14 @@ body.font-ar .submit-button {
   width: 200px;
   padding: auto 0px;
 }
+.footernavbar-logo {
+  display: flex; /* Ensure content is centered */
+  align-items: center; /* Vertically align logo */
+  justify-content: center; /* Center the logo horizontally */
+  height: 50px; /* Let the height adjust naturally */
+  width: 100px;
+  padding: auto 0px;
+}
 .navbar-logo a {
   height: 70px;
 }
