@@ -1523,6 +1523,9 @@ form#orderForm {
   flex: 1;
   text-align: center;
   align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 14px;
 }
 
 /* Social media icons */
