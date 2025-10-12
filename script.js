@@ -1,47 +1,52 @@
-// script.js
+// ============================================================
+// LOADING SCREEN
+// ============================================================
 document.addEventListener("DOMContentLoaded", () => {
-  // Wait for the page to load all assets
   window.onload = () => {
     const loadingScreen = document.getElementById("loading-screen");
     const content = document.getElementById("content");
 
-    // Add a fade-out effect (optional)
     loadingScreen.style.transition = "opacity 0.5s";
     loadingScreen.style.opacity = "0";
 
-    // Wait for the fade-out effect to finish before hiding
     setTimeout(() => {
       loadingScreen.style.display = "none";
-      content.style.display = "block"; // Show the content
-    }, 500); // Match the fade-out duration
+      if (content) content.style.display = "block";
+    }, 500);
   };
 });
+
+// ============================================================
+// PROJECT ORDER OVERLAY
+// ============================================================
 document.addEventListener("DOMContentLoaded", () => {
   const orderButton = document.getElementById("projects");
   const orderOverlay = document.getElementById("orderOverlay");
   const closeOverlay = document.getElementById("closeOverlay");
 
-  // Show the overlay when the order button is clicked
-  orderButton.addEventListener("click", () => {
-    orderOverlay.style.display = "flex"; // Display as flex to center content
-  });
+  if (orderButton && orderOverlay && closeOverlay) {
+    orderButton.addEventListener("click", () => {
+      orderOverlay.style.display = "flex";
+    });
 
-  // Hide the overlay when the close button is clicked
-  closeOverlay.addEventListener("click", () => {
-    orderOverlay.style.display = "none";
-  });
-
-  // Hide overlay if user clicks outside the form
-  orderOverlay.addEventListener("click", (e) => {
-    if (e.target === orderOverlay) {
+    closeOverlay.addEventListener("click", () => {
       orderOverlay.style.display = "none";
-    }
-  });
+    });
+
+    orderOverlay.addEventListener("click", (e) => {
+      if (e.target === orderOverlay) orderOverlay.style.display = "none";
+    });
+  }
 });
+
+// ============================================================
+// SCROLL-TO-TOP BUTTON
+// ============================================================
 document.addEventListener("DOMContentLoaded", () => {
   const scrollToTopBtn = document.getElementById("scrollToTop");
 
-  // Show or hide the button when scrolling
+  if (!scrollToTopBtn) return;
+
   window.addEventListener("scroll", () => {
     if (window.scrollY > 500) {
       scrollToTopBtn.classList.add("show");
@@ -50,68 +55,62 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // Scroll smoothly to the top when the button is clicked
   scrollToTopBtn.addEventListener("click", () => {
     window.scrollTo({
       top: 0,
-      behavior: "smooth", // Enables smooth scrolling
+      behavior: "smooth",
     });
   });
 });
 
-/*============================================================================================================================*/
+// ============================================================
+// TELEGRAM FORM SUBMISSIONS
+// ============================================================
 document.addEventListener("DOMContentLoaded", function () {
-  // Function to handle form submissions
   function handleFormSubmission(formId, botToken, chatId, type) {
     const form = document.getElementById(formId);
     if (!form) return;
 
     form.addEventListener("submit", function (event) {
-      event.preventDefault(); // Prevent default form submission behavior
+      event.preventDefault();
 
-      // Collect form data
-      const fullName = form.querySelector("#fullName").value;
-      const phoneNumber = form.querySelector("#phoneNumber").value;
+      const fullName = form.querySelector("#fullName")?.value;
+      const phoneNumber = form.querySelector("#phoneNumber")?.value;
 
       let isValid = true;
       const errorMessages = form.querySelectorAll(".error-message");
-      errorMessages.forEach((msg) => (msg.style.display = "none")); // Hide all error messages initially
+      errorMessages.forEach((msg) => (msg.style.display = "none"));
 
-      // Validate required fields
       if (!fullName) {
-        form.querySelector("#fullName + .error-message").style.display =
-          "block";
+        form.querySelector("#fullName + .error-message").style.display = "block";
         isValid = false;
       }
       if (!phoneNumber) {
-        form.querySelector("#phoneNumber + .error-message").style.display =
-          "block";
+        form.querySelector("#phoneNumber + .error-message").style.display = "block";
         isValid = false;
       }
 
       let message = `*New Submission:*\n- Full Name: ${fullName}\n- Phone Number: ${phoneNumber}`;
 
       if (type === "order") {
-        const city = form.querySelector("#city").value;
-        const surface = form.querySelector("#surface").value;
+        const city = form.querySelector("#city")?.value;
+        const surface = form.querySelector("#surface")?.value;
         if (!city) {
           form.querySelector("#city + .error-message").style.display = "block";
           isValid = false;
         }
         message += `\n- City: ${city}\n- Surface: ${surface || "Not provided"}`;
       } else if (type === "professional") {
-        const profession = form.querySelector("#profession").value;
+        const profession = form.querySelector("#profession")?.value;
         if (!profession) {
-          form.querySelector("#profession + .error-message").style.display =
-            "block";
+          form.querySelector("#profession + .error-message").style.display = "block";
           isValid = false;
         }
         message += `\n- Profession: ${profession}`;
       }
 
-      if (!isValid) return; // Stop if validation fails
+      if (!isValid) return;
 
-      // Send the message using Telegram's Bot API
       fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -123,110 +122,229 @@ document.addEventListener("DOMContentLoaded", function () {
       })
         .then((response) => {
           if (response.ok) {
-            // Get the current height of the form-wrapper and fix it
             const formWrapper = form.closest(".form-wrapper");
             formWrapper.style.height = `${formWrapper.offsetHeight}px`;
-
-            // Hide the form and show the thank-you message
             form.style.display = "none";
-            formWrapper.querySelector(".thank-you-message").style.display =
-              "block";
+            formWrapper.querySelector(".thank-you-message").style.display = "block";
           } else {
-            console.error("Failed to send message to Telegram:", response);
             alert("An error occurred. Please try again later.");
           }
         })
-        .catch((error) => {
-          console.error("Error:", error);
+        .catch(() => {
           alert("An error occurred. Please check your internet connection.");
         });
     });
   }
 
-  // Replace with your actual bot token and chat IDpreventDefault
   const botToken = "7526772728:AAE8xfyUfEb-zq1KL3uE0OdYlq4wLVdoPAc";
   const chatId = "7285884938";
 
-  // Attach handlers for each form
   handleFormSubmission("orderForm", botToken, chatId, "order");
   handleFormSubmission("professionalForm", botToken, chatId, "professional");
 });
 
-/*============================================================================================================================*/
-
-// Function to fetch translations from lang.json (for later use)
-async function fetchTranslations() {
-  const response = await fetch("lang.json");
-  return await response.json();
-}
-
-// Initialize the current slide index
+// ============================================================
+// SLIDESHOW
+// ============================================================
 let currentSlide = 0;
 const slides = document.querySelectorAll(".slide");
 
-// Function to show slides every 3 seconds
 function showSlides() {
-  // Remove 'active' class from all slides
   slides.forEach((slide) => slide.classList.remove("active"));
-
-  // Add 'active' class to the current slide
-  slides[currentSlide].classList.add("active");
-
-  // Increment slide index or reset if at the end
-  currentSlide = (currentSlide + 1) % slides.length;
+  if (slides.length > 0) {
+    slides[currentSlide].classList.add("active");
+    currentSlide = (currentSlide + 1) % slides.length;
+  }
 }
-
-// Run slideshow every 3 seconds
 setInterval(showSlides, 3000);
-
-// Start the slideshow on load
 window.addEventListener("load", showSlides);
 
-// Function to toggle the dropdown visibility on small screens
+// ============================================================
+// NAVBAR DROPDOWN TOGGLE
+// ============================================================
 function toggleDropdown() {
-  var dropdown = document.getElementById("projects-dropdown");
+  const dropdown = document.getElementById("projects-dropdown");
+  if (!dropdown) return;
 
-  // Toggle the dropdown visibility by adjusting display property
-  if (dropdown.style.display === "block") {
-    dropdown.style.display = "none"; // Hide it if it's visible
-  } else {
-    dropdown.style.display = "block"; // Show it if it's hidden
-  }
+  dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
 }
 
-// Add event listener to the "Projects" button
-document
-  .getElementById("projects-btn")
-  .addEventListener("click", toggleDropdown);
+const projectsBtn = document.getElementById("projects-btn");
+if (projectsBtn) {
+  projectsBtn.addEventListener("click", toggleDropdown);
+}
 
-// Inline JS to force column layout on mobile screens
+// Force column layout for small screens
 if (window.innerWidth <= 768) {
-  document.querySelector(".navbar").style.flexDirection = "column";
+  const navbar = document.querySelector(".navbar");
+  if (navbar) navbar.style.flexDirection = "column";
 }
 
-// Function to scroll down with a smooth and slow effect
+// ============================================================
+// SMOOTH SCROLL DOWN FUNCTION
+// ============================================================
 function scrollDown() {
-  const scrollTarget = window.innerHeight; // The distance to scroll (one full screen height)
-  const startPosition = window.scrollY; // Current scroll position
-  const distance = scrollTarget - startPosition; // The total distance to scroll
-  const duration = 900; // Duration of the scroll in milliseconds (slower scroll)
-  const startTime = performance.now(); // Start time for the animation
+  const scrollTarget = window.innerHeight;
+  const startPosition = window.scrollY;
+  const distance = scrollTarget - startPosition;
+  const duration = 900;
+  const startTime = performance.now();
 
-  // Function for smooth scrolling
   function smoothScroll(currentTime) {
-    const timeElapsed = currentTime - startTime; // Time passed since animation started
-    const progress = Math.min(timeElapsed / duration, 1); // Progress of the scroll (0 to 1)
-
-    // Calculate the new scroll position
+    const timeElapsed = currentTime - startTime;
+    const progress = Math.min(timeElapsed / duration, 1);
     const newPosition = startPosition + distance * progress;
-
-    window.scrollTo(0, newPosition); // Scroll to the new position
-
-    if (progress < 1) {
-      requestAnimationFrame(smoothScroll); // Continue the animation
-    }
+    window.scrollTo(0, newPosition);
+    if (progress < 1) requestAnimationFrame(smoothScroll);
   }
 
-  // Start the animation
   requestAnimationFrame(smoothScroll);
 }
+
+// ============================================================
+// COURSES PAGE FILTER, SEARCH & LAYOUT TOGGLE
+// ============================================================
+document.addEventListener("DOMContentLoaded", function () {
+  const searchTop = document.getElementById("search");
+  const searchSidebar = document.getElementById("searchSidebar");
+  const toggleLayoutBtn = document.getElementById("toggle-layout");
+  const optionA = document.getElementById("option-a");
+  const optionB = document.getElementById("option-b");
+  const coursesGridA = document.getElementById("coursesGridA");
+  const coursesGridB = document.getElementById("coursesGridB");
+
+  if (!coursesGridA) return; // Only run if on courses page
+
+  const cards = Array.from(coursesGridA.querySelectorAll(".course-card"));
+  cards.forEach((card) => coursesGridB.appendChild(card.cloneNode(true)));
+
+  const selectedSoftwares = new Set();
+  let priceFilter = "all";
+
+  function getSoftwareTags(cardEl) {
+    const raw = cardEl.getAttribute("data-software") || "";
+    return raw.split(",").map((s) => s.trim().toLowerCase());
+  }
+
+  function getNumericPrice(cardEl) {
+    const priceEl = cardEl.querySelector(".course-price");
+    const num = parseFloat(priceEl?.textContent.replace(/[^\d.]/g, "")) || 0;
+    return num;
+  }
+
+  function matchesSearch(cardEl, q) {
+    if (!q) return true;
+    q = q.trim().toLowerCase();
+    const title = cardEl.querySelector(".course-title")?.textContent.toLowerCase() || "";
+    const desc = cardEl.querySelector(".course-desc")?.textContent.toLowerCase() || "";
+    return title.includes(q) || desc.includes(q);
+  }
+
+  function matchesPrice(cardEl) {
+    const price = getNumericPrice(cardEl);
+    if (priceFilter === "under50") return price < 50;
+    if (priceFilter === "50to80") return price >= 50 && price <= 80;
+    if (priceFilter === "80plus") return price > 80;
+    return true;
+  }
+
+  function matchesSoftware(cardEl) {
+    if (selectedSoftwares.size === 0) return true;
+    const tags = getSoftwareTags(cardEl);
+    return Array.from(selectedSoftwares).some((s) => tags.includes(s));
+  }
+
+  function applyFilters(grid, q) {
+    const cards = grid.querySelectorAll(".course-card");
+    cards.forEach((card) => {
+      const show =
+        matchesSearch(card, q) && matchesSoftware(card) && matchesPrice(card);
+      card.style.display = show ? "" : "none";
+    });
+  }
+
+  function applyAllFilters() {
+    const q1 = searchTop?.value || "";
+    const q2 = searchSidebar?.value || "";
+    applyFilters(coursesGridA, q1);
+    applyFilters(coursesGridB, q2);
+  }
+
+  searchTop?.addEventListener("input", applyAllFilters);
+  searchSidebar?.addEventListener("input", applyAllFilters);
+
+  const chips = document.querySelectorAll(".chip");
+  chips.forEach((chip) => {
+    chip.addEventListener("click", () => {
+      const sof = chip.dataset.sof.toLowerCase();
+      if (selectedSoftwares.has(sof)) {
+        selectedSoftwares.delete(sof);
+        chip.classList.remove("active");
+      } else {
+        selectedSoftwares.add(sof);
+        chip.classList.add("active");
+      }
+      applyAllFilters();
+    });
+  });
+
+  const sidebarCheckboxes = Array.from(
+    document.querySelectorAll("#option-b .sidebar input[type='checkbox']")
+  );
+  sidebarCheckboxes.forEach((cb) => {
+    cb.addEventListener("change", () => {
+      selectedSoftwares.clear();
+      sidebarCheckboxes.forEach((x) => {
+        if (x.checked) selectedSoftwares.add(x.dataset.sof.toLowerCase());
+      });
+      chips.forEach((chip) => {
+        chip.classList.toggle("active", selectedSoftwares.has(chip.dataset.sof));
+      });
+      applyAllFilters();
+    });
+  });
+
+  const priceSelect = document.getElementById("priceFilter");
+  priceSelect?.addEventListener("change", () => {
+    priceFilter = priceSelect.value;
+    applyAllFilters();
+  });
+
+  const clearBtn = document.getElementById("clearFilters");
+  clearBtn?.addEventListener("click", () => {
+    selectedSoftwares.clear();
+    chips.forEach((c) => c.classList.remove("active"));
+    sidebarCheckboxes.forEach((cb) => (cb.checked = false));
+    if (priceSelect) priceSelect.value = "all";
+    priceFilter = "all";
+    if (searchTop) searchTop.value = "";
+    if (searchSidebar) searchSidebar.value = "";
+    applyAllFilters();
+  });
+
+  toggleLayoutBtn?.addEventListener("click", () => {
+    const isA = !optionA.classList.contains("hide");
+    if (isA) {
+      optionA.classList.add("hide");
+      optionB.classList.remove("hide");
+      toggleLayoutBtn.textContent = "Switch to top-filter layout";
+    } else {
+      optionB.classList.add("hide");
+      optionA.classList.remove("hide");
+      toggleLayoutBtn.textContent = "Switch to sidebar layout";
+    }
+    applyAllFilters();
+  });
+
+  // Buy button demo
+  document.body.addEventListener("click", (e) => {
+    const btn = e.target.closest(".buy-btn");
+    if (!btn) return;
+    e.preventDefault();
+    const card = btn.closest(".course-card");
+    const title = card?.querySelector(".course-title")?.textContent || "Course";
+    alert(`Buying: ${title}`);
+  });
+
+  applyAllFilters();
+});
