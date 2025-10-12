@@ -175,6 +175,15 @@ body.font-ar .submit-button {
   width: 200px;
   padding: auto 0px;
 }
+.darkNavbar-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70px; 
+  width: 200px;
+  padding: auto 0px;
+  fill: #ccc;
+}
 .footernavbar-logo {
   display: flex;
   align-items: center;
@@ -186,11 +195,21 @@ body.font-ar .submit-button {
 .navbar-logo a {
   height: 70px;
 }
+.darkNavbar-logo a {
+  height: 70px;
+}
 .footernavbar-logo a {
   height: 70px;
 }
 /* Logo Styles */
 .navbar-logo svg {
+  flex: 1;
+  width: 200px;
+  height: 70px;
+  cursor: pointer;
+  direction: ltr !important;
+}
+.darkNavbar-logo svg {
   flex: 1;
   width: 200px;
   height: 70px;
@@ -205,6 +224,13 @@ body.font-ar .submit-button {
   direction: ltr !important;
 }
 .navbar-logo img {
+  align-items: center;
+  flex: 1;
+  width: 200px;
+  height: auto;
+  cursor: pointer;
+}
+.darkNavbar-logo img {
   align-items: center;
   flex: 1;
   width: 200px;
@@ -418,6 +444,18 @@ body.font-ar .submit-button {
   }
   .navbar-logo a {
     width: 150px;
+    height: auto;
+    padding: auto 0px;
+  }
+  .darkNavbar-logo svg {
+    width: 150px;
+    fill:#ccc;
+    height: auto;
+    padding: auto 0px;
+  }
+  .darkNavbar-logo a {
+    width: 150px;
+    fill:#ccc;
     height: auto;
     padding: auto 0px;
   }
