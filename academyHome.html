@@ -30,7 +30,7 @@
 </head>
 <script>
   $(document).ready(function () {
-    $("#header-container").load("elements/header.html", function () {
+    $("#header-container").load("elements/headerDark.html", function () {
       const savedLanguage = localStorage.getItem("preferredLanguage") || "en";
       applyTranslations(savedLanguage); // Call translation function after loading
     });
@@ -38,7 +38,7 @@
 </script>
 <script>
   $(function () {
-    $("#footer").load("elements/footer.html", function () {
+    $("#darkFooter").load("elements/footerDark.html", function () {
       applyTranslations(localStorage.getItem("preferredLanguage") || "en");
     });
   });
@@ -61,8 +61,8 @@
       </svg>
     </button>
   <header id="header-container"></header>
-  
-  <footer id="footer"></footer>
+
+  <footer id="darkFooter"></footer>
   <script src="script.js"></script>
 </body>
 

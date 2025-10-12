@@ -175,29 +175,19 @@ body.font-ar .submit-button {
   width: 200px;
   padding: auto 0px;
 }
-.darkNavbar-logo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 70px; 
-  width: 200px;
-  padding: auto 0px;
-  fill: #ccc;
-}
 .footernavbar-logo {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 70px; 
+  height: 70px;
   width: 200px;
   padding: auto 0px;
 }
+
 .navbar-logo a {
   height: 70px;
 }
-.darkNavbar-logo a {
-  height: 70px;
-}
+
 .footernavbar-logo a {
   height: 70px;
 }
@@ -209,13 +199,7 @@ body.font-ar .submit-button {
   cursor: pointer;
   direction: ltr !important;
 }
-.darkNavbar-logo svg {
-  flex: 1;
-  width: 200px;
-  height: 70px;
-  cursor: pointer;
-  direction: ltr !important;
-}
+
 .footernavbar-logo svg {
   flex: 1;
   width: 150px;
@@ -223,6 +207,7 @@ body.font-ar .submit-button {
   cursor: pointer;
   direction: ltr !important;
 }
+
 .navbar-logo img {
   align-items: center;
   flex: 1;
@@ -230,13 +215,7 @@ body.font-ar .submit-button {
   height: auto;
   cursor: pointer;
 }
-.darkNavbar-logo img {
-  align-items: center;
-  flex: 1;
-  width: 200px;
-  height: auto;
-  cursor: pointer;
-}
+
 .footernavbar-logo img {
   align-items: center;
   flex: 1;
@@ -447,19 +426,8 @@ body.font-ar .submit-button {
     height: auto;
     padding: auto 0px;
   }
-  .darkNavbar-logo svg {
-    width: 150px;
-    fill:#ccc;
-    height: auto;
-    padding: auto 0px;
-  }
-  .darkNavbar-logo a {
-    width: 150px;
-    fill:#ccc;
-    height: auto;
-    padding: auto 0px;
-  }
-    .footernavbar-logo svg {
+
+  .footernavbar-logo svg {
     width: 150px;
     height: auto;
     padding: auto 0px;
@@ -2435,3 +2403,262 @@ h2 {
 }
 
 /*============================================================================================================================*/
+.darkNavbar-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70px; 
+  width: 200px;
+  padding: auto 0px;
+  /* fill: #fff; */
+}
+
+.darkNavbar-logo a {
+  height: 70px;
+}
+
+.darkNavbar-logo svg {
+  flex: 1;
+  width: 200px;
+  height: 70px;
+  cursor: pointer;
+  direction: ltr !important;
+}
+.darkNavbar-logo img {
+  align-items: center;
+  flex: 1;
+  width: 200px;
+  height: auto;
+  cursor: pointer;
+}
+/* .darkNavbar-logo svg {
+    width: 150px;
+    fill:#fff;
+    height: auto;
+    padding: auto 0px;
+  } */
+.darkNavbar-logo a {
+    width: 150px;
+    fill:#fff;
+    height: auto;
+    padding: auto 0px;
+  }
+
+/* Navbar Styles */
+.darkNavbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  background-color: #282829;
+  padding: 0 60px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.darkNav-link {
+  background: none;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.3s;
+  padding: 10px 20px;
+  text-decoration: none; /* Ensure no underline for links */
+  display: inline-block; /* Ensure proper padding applies */
+  -webkit-tap-highlight-color: transparent;
+}
+@media (max-width: 960px) {
+  /* Navbar styling adjustments for smaller screens */
+  .darkNavbar {
+    flex-direction: column !important;
+    align-items: center;
+    padding: 10px 20px;
+    height: auto;
+    max-width: 100%;
+  }
+
+  /* Ensure RTL language does not change column layout */
+  body.rtl .darkNavbar {
+    flex-direction: column !important;
+    /* Force column layout in RTL */
+    align-items: center;
+  }
+
+  /* Logo resizing */
+  /* .navbar-logo img {
+    width: 200px;
+    height: 70px;
+  } */
+  .darkNavbar-logo svg {
+    width: 150px;
+    height: auto;
+    padding: auto 0px;
+  }
+  .darkNavbar-logo a {
+    width: 150px;
+    height: auto;
+    padding: auto 0px;
+  }
+
+  .darkFooternavbar-logo svg {
+    width: 150px;
+    height: auto;
+    padding: auto 0px;
+    fill: #fff;
+  }
+  .footernavbar-logo a {
+    width: 150px;
+    height: auto;
+    padding: auto 0px;
+  }
+  /* Navigation links styling for mobile
+  .darkNavbar-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    color: #fff;
+    /* Take full width on mobile 
+  }
+
+  /* Adjust nav link spacing and font size for readability on smaller screens */
+  .darkNav-link {
+    font-size: 14px;
+    padding: 10px 0;
+    max-width: 100%;
+    margin: 0px auto;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .dropdown-wrapper {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Dropdown menu adjustments for mobile */
+  .dropdown-menu {
+    display: flex;
+    flex-direction: column;
+    /* Stack them with the other nav items */
+    opacity: 0;
+    /* Hidden by default */
+    /* visibility: hidden; */
+    align-items: center;
+    left: 0;
+    max-height: 0;
+    transform: translateX(0%);
+    /* Center the dropdown horizontally */
+    /* transition: opacity 3s ease, height 3s ease, visibility 3s ease; */
+    overflow: hidden;
+    position: static;
+    /* Make them part of the normal flow */
+    background-color: transparent;
+    /* Remove background */
+    box-shadow: none;
+    /* Remove shadow */
+    padding: 0;
+    /* Remove padding */
+    visibility: hidden;
+    padding: 0;
+    max-width: 100%;
+  }
+
+  /* Smooth expand and collapse using keyframes */
+  @keyframes expandDropdown {
+    from {
+      max-height: 0;
+      opacity: 0;
+    }
+
+    to {
+      max-height: 300px;
+      opacity: 1;
+    }
+  }
+
+  @keyframes collapseDropdown {
+    from {
+      max-height: 300px;
+      opacity: 1;
+    }
+
+    to {
+      max-height: 0;
+      opacity: 0;
+    }
+  }
+
+  /* Show the dropdown smoothly when class "show-dropdown" is added */
+  .show-dropdown {
+    opacity: 1;
+    visibility: visible;
+    animation: expandDropdown 0.5s ease forwards;
+    /* Expand animation */
+    max-height: 300px;
+    /* Adjust this height based on content */
+  }
+
+  /* Optional collapse animation when hiding */
+  .dropdown-menu:not(.show-dropdown) {
+    animation: collapseDropdown 0.5s ease forwards;
+    /* Collapse animation */
+  }
+
+  /* Dropdown link styling on mobile */
+  .dropdown-link {
+    text-align: center;
+    max-width: 100%;
+    padding: 10px 0;
+    font-size: 14px;
+  }
+}
+
+#darkFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 30px;
+  padding-right: 0px;
+  position: relative;
+  margin-top: auto;
+  margin-bottom: 0;
+  width: 100%;
+  background-color: #282829;
+  flex-wrap: wrap;
+  height: 80px;
+}
+
+.darkFooternavbar-logo svg {
+  flex: 1;
+  width: 150px;
+  height: 60px;
+  cursor: pointer;
+  direction: ltr !important;
+  fill: #fff;
+}
+
+
+@media (max-width: 960px) {
+    #darkFooter {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding-left: 0;
+    padding-top: 0;
+  }
+  .darkFooternavbar-logo svg {
+  flex: 1;
+  width: 120px;
+  /* height: 60px; */
+  cursor: pointer;
+  direction: ltr !important;
+  fill: #fff;
+}
+}
