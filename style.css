@@ -2672,10 +2672,10 @@ h2 {
   font-size: 14px;
 }
 
-.icon-image3 {
+#darkFooter .icon-image3 {
   filter: brightness(0) invert(1);
 }
-.icon-image3:hover {
+#darkFooter .icon-image3:hover {
   filter: brightness(0) invert(0.9);
 }
 /*============================================================================================================================*/
