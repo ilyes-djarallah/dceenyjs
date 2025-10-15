@@ -159,6 +159,7 @@ function showSlides() {
 setInterval(showSlides, 3000);
 window.addEventListener("load", showSlides);
 
+
 // ============================================================
 // NAVBAR DROPDOWN TOGGLE
 // ============================================================
