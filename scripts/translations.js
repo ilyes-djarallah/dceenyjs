@@ -264,7 +264,13 @@ const translations = {
     cheragaTwoInfo: "Type: interior | Location: Chéraga, Algiers | Surface: 50 m²",
 
 
-    academy: "Academy",
+    academy: "Education",
+
+
+    coursesNtraining: "Courses and training",
+
+    threeDSoft:"3D Software",
+    twoDSoft:"2D Software",
   },
 
 
@@ -560,6 +566,13 @@ const translations = {
 
 
     academy: "Académie",
+
+
+
+    coursesNtraining: "Cours et formations",
+    
+    threeDSoft:"Logiciels 3D",
+    twoDSoft:"Logiciels 2D",
   },
 
 
@@ -832,6 +845,15 @@ const translations = {
 
 
     academy: "الأكاديمية",
+
+
+
+
+    coursesNtraining: "الدورات والتدريب",
+
+
+    threeDSoft:"برامج 3دي",
+    twoDSoft:"برامج 2دي",
   },
 };
 

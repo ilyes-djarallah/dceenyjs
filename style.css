@@ -2450,7 +2450,7 @@ h2 {
   align-items: center;
   justify-content: space-between;
   height: 80px;
-  background-color: #414141;
+  background-color: black;
   padding: 0 60px;
   position: sticky;
   top: 0;
@@ -2630,7 +2630,7 @@ h2 {
   margin-top: auto;
   margin-bottom: 0;
   width: 100%;
-  background-color: #414141;
+  background-color: black;
   flex-wrap: wrap;
   height: 80px;
 }
@@ -2708,6 +2708,8 @@ body{
 /* Page container */
 .page-container{
   max-width:var(--max-width);
+  /* color: #000; */
+  /* background-color: #000; */
   margin:30px auto;
   padding:0 18px 60px;
 }
@@ -2892,3 +2894,13 @@ body{
 
 /* small spacing customization for icon margins inside footer-like areas if needed */
 .icon-s{display:inline-flex;align-items:center;justify-content:center}
+
+#academyBody {
+  /* --bg: #111;
+  --muted: #222; */
+  /* --text: #eee; */
+  /* --accent: #eee; */
+  /* --shadow-color: rgba(0, 0, 0, 0.4); */
+  background-color: #000;
+  color: #fff; /* makes all text white so it's readable */
+}

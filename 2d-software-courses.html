@@ -55,7 +55,7 @@
     });
   </script>
 
-  <body id="academyBody" class="dark-theme">
+  <body>
     <!-- Loading Screen -->
     <div id="loading-screen">
       <div class="loader"></div>
@@ -88,90 +88,14 @@
     <!-- ===============================
          MAIN CONTENT — COURSES SECTION
          =============================== -->
-
-    <main>
-      <div class="slideshow-container">
-        <!-- Images for Slideshow -->
-        <img
-          src="assets/images/projects/private/Jakarta/cam 001.jpg"
-          class="slide"
-          alt="Image 1"
-        />
-        <img
-          src="assets/images/projects/private/Jakarta/cam 002.jpg"
-          class="slide"
-          alt="Image 2"
-        />
-        <img
-          src="assets/images/projects/private/Jakarta/cam 003.jpg"
-          class="slide"
-          alt="Image 3"
-        />
-        <img
-          src="assets/images/projects/private/Jakarta/cam 004.jpg"
-          class="slide"
-          alt="Image 4"
-        />
-        <img
-          src="assets/images/projects/private/Jakarta/cam 005.jpg"
-          class="slide"
-          alt="Image 5"
-        />
-        <img
-          src="assets/images/projects/private/Jakarta/cam 006.jpg"
-          class="slide"
-          alt="Image 6"
-        />
-        <img
-          src="assets/images/projects/private/Jakarta/cam 007.jpg"
-          class="slide"
-          alt="Image 7"
-        />
-        <img
-          src="assets/images/projects/private/Jakarta/cam 008.jpg"
-          class="slide"
-          alt="Image 8"
-        />
-        <img
-          src="assets/images/projects/private/Jakarta/cam 009.jpg"
-          class="slide"
-          alt="Image 9"
-        />
-        <img
-          src="assets/images/projects/private/Jakarta/cam 010.jpg"
-          class="slide"
-          alt="Image 10"
-        />
-
-        <!-- Overlay Text -->
-        <div class="overlay-text">
-          <span class="first-line" data-translate="prvapartment"></span>
-          <span class="second-line" data-translate="livingRoom"></span>
-        </div>
-
-        <!-- Down Arrow Icon -->
-        <div class="down-arrow" onclick="scrollDown()">
-          <!-- Inline SVG for down arrow -->
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="100"
-            height="100"
-            viewBox="0 0 24 24"
-          >
-            <polygon
-              points="12 17.414 3.293 8.707 4.707 7.293 12 14.586 19.293 7.293 20.707 8.707 12 17.414"
-            />
-          </svg>
-        </div>
-      </div>
-      <div class="page-container">
-      <!-- Page Header -->
+    <main class="page-container">
       <header class="page-header">
         <h1 data-translate="academyTitle">Dceeny Academy</h1>
         <p class="subtitle" data-translate="academySubtitle">
           Learn 3D software for interior design — 3ds Max, Corona, Revit,
           SketchUp, D5 Render, and Unreal Engine.
         </p>
+
         <!-- Top Search and Filter Controls -->
         <div class="controls-top">
           <div class="search-wrap">
@@ -211,9 +135,7 @@
               />
             </figure>
             <div class="course-body">
-              <h3 class="course-title">
-                3ds Max — Complete Modeling & Renders
-              </h3>
+              <h3 class="course-title">3ds Max — Complete Modeling & Renders</h3>
               <p class="course-desc">
                 Learn full workflow of modeling, lighting, and Corona rendering
                 for interiors.
@@ -235,18 +157,8 @@
                       stroke-linecap="round"
                       stroke-linejoin="round"
                     ></path>
-                    <circle
-                      cx="10"
-                      cy="20"
-                      r="1.5"
-                      fill="currentColor"
-                    ></circle>
-                    <circle
-                      cx="18"
-                      cy="20"
-                      r="1.5"
-                      fill="currentColor"
-                    ></circle>
+                    <circle cx="10" cy="20" r="1.5" fill="currentColor"></circle>
+                    <circle cx="18" cy="20" r="1.5" fill="currentColor"></circle>
                   </svg>
                   <span>Buy</span>
                 </button>
@@ -256,10 +168,7 @@
 
           <article class="course-card" data-software="revit">
             <figure class="course-media">
-              <img
-                src="assets/images/New folder/images_GlobaleTraining_2021-07_Revit - 678 x 382.jpg"
-                alt="Revit course"
-              />
+              <img src="assets/images/New folder/images_GlobaleTraining_2021-07_Revit - 678 x 382.jpg" alt="Revit course" />
             </figure>
             <div class="course-body">
               <h3 class="course-title">Revit — From Zero to Pro</h3>
@@ -284,18 +193,8 @@
                       stroke-linecap="round"
                       stroke-linejoin="round"
                     ></path>
-                    <circle
-                      cx="10"
-                      cy="20"
-                      r="1.5"
-                      fill="currentColor"
-                    ></circle>
-                    <circle
-                      cx="18"
-                      cy="20"
-                      r="1.5"
-                      fill="currentColor"
-                    ></circle>
+                    <circle cx="10" cy="20" r="1.5" fill="currentColor"></circle>
+                    <circle cx="18" cy="20" r="1.5" fill="currentColor"></circle>
                   </svg>
                   <span>Buy</span>
                 </button>
@@ -333,18 +232,8 @@
                       stroke-linecap="round"
                       stroke-linejoin="round"
                     ></path>
-                    <circle
-                      cx="10"
-                      cy="20"
-                      r="1.5"
-                      fill="currentColor"
-                    ></circle>
-                    <circle
-                      cx="18"
-                      cy="20"
-                      r="1.5"
-                      fill="currentColor"
-                    ></circle>
+                    <circle cx="10" cy="20" r="1.5" fill="currentColor"></circle>
+                    <circle cx="18" cy="20" r="1.5" fill="currentColor"></circle>
                   </svg>
                   <span>Buy</span>
                 </button>
@@ -354,8 +243,9 @@
 
           <!-- ...add more course cards as desired... -->
         </div>
-        </div>
       </section>
+
+      <!-- Option B — Sidebar filters layout -->
       <section id="option-b" class="courses-with-sidebar hide">
         <aside class="sidebar">
           <div class="sidebar-group">
@@ -363,13 +253,9 @@
             <label><input type="checkbox" data-sof="3dsmax" /> 3ds Max</label>
             <label><input type="checkbox" data-sof="corona" /> Corona</label>
             <label><input type="checkbox" data-sof="revit" /> Revit</label>
-            <label
-              ><input type="checkbox" data-sof="sketchup" /> SketchUp</label
-            >
+            <label><input type="checkbox" data-sof="sketchup" /> SketchUp</label>
             <label><input type="checkbox" data-sof="d5" /> D5 Render</label>
-            <label
-              ><input type="checkbox" data-sof="unreal" /> Unreal Engine</label
-            >
+            <label><input type="checkbox" data-sof="unreal" /> Unreal Engine</label>
           </div>
 
           <div class="sidebar-group">
