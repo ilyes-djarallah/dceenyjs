@@ -349,3 +349,48 @@ document.addEventListener("DOMContentLoaded", function () {
 
   applyAllFilters();
 });
+
+// ============================================================
+// GALLERY SLIDESHOW
+// ============================================================
+
+  const gallerySlides = document.querySelectorAll(".gallery-slide");
+  const dots = document.querySelectorAll(".gallery-dots .dot");
+  const prevBtn = document.querySelector(".gallery-prev");
+  const nextBtn = document.querySelector(".gallery-next");
+  const caption = document.querySelector(".gallery-caption");
+  let currentGalleryIndex = 0;
+
+  function showGallerySlide(index) {
+    gallerySlides.forEach((slide, i) => {
+      slide.classList.toggle("active", i === index);
+      dots[i].classList.toggle("active", i === index);
+    });
+    caption.textContent = gallerySlides[index].dataset.caption || "";
+  }
+
+  function nextGallerySlide() {
+    currentGalleryIndex = (currentGalleryIndex + 1) % gallerySlides.length;
+    showGallerySlide(currentGalleryIndex);
+  }
+
+  function prevGallerySlide() {
+    currentGalleryIndex =
+      (currentGalleryIndex - 1 + gallerySlides.length) % gallerySlides.length;
+    showGallerySlide(currentGalleryIndex);
+  }
+
+  nextBtn.addEventListener("click", nextGallerySlide);
+  prevBtn.addEventListener("click", prevGallerySlide);
+
+  dots.forEach((dot, i) =>
+    dot.addEventListener("click", () => {
+      currentGalleryIndex = i;
+      showGallerySlide(i);
+    })
+  );
+
+  // Initialize caption and auto-slide
+  showGallerySlide(0);
+  setInterval(nextGallerySlide, 5000);
+
