@@ -2493,16 +2493,19 @@ h2 {
     width: 200px;
     height: 70px;
   } */
-  .darkNavbar-logo svg {
-    width: 70px;
-    height: auto;
-    padding: 50px 0px;
+   .darkNavbar-logo {
+    padding: 10px 0px;
   }
-  .darkNavbar-logo a {
-    width: 70px;
+  .darkNavbar-logo svg {
+    width: 40px;
+    height: auto;
+    padding: 10px 0px;
+  }
+  /* .darkNavbar-logo a {
+    width: 40px;
     height: auto;
     padding: 200px 0px;
-  }
+  } */
 
   .darkFooternavbar-logo svg {
     width: 10px;
@@ -2527,8 +2530,8 @@ h2 {
 
   /* Adjust nav link spacing and font size for readability on smaller screens */
   .darkNav-link {
-    font-size: 14px;
-    padding: 15px 0;
+    font-size: 12px;
+    padding: 10px 0;
     max-width: 100%;
     margin: 0px auto;
     text-align: center;
@@ -3127,13 +3130,10 @@ body {
 
 .learning {
   font-weight: bold;
-  /* Makes the text bold */
   font-size: 48px;
-  /* Huge size */
 }
 .spacer {
   height: 20px;
-  /* Adds space between elements */
 } 
 
 .learning-overlay-text {
@@ -3149,10 +3149,23 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
-  
 }
 
-
+@media (max-width: 960px) {
+  .learning-overlay-text {
+    top: 20%;
+    left: 50%;
+  }
+  .learning {
+    font-weight: bold;
+    font-size: 28px;
+  }
+  .learning-desc {
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 10px;
+  }
+}
 
 
 /* ==========================
