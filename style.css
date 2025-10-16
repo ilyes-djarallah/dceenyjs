@@ -3540,3 +3540,23 @@ body {
     opacity: 0.7;
   }
 }
+
+
+/*============================================================================================================================*/
+.results-banner {
+  width: 100%;
+  height: 70px;
+  background: #000; /* or any color you like */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.results-banner h2 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
