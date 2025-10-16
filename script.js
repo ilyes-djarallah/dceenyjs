@@ -394,3 +394,38 @@ document.addEventListener("DOMContentLoaded", function () {
   showGallerySlide(0);
   setInterval(nextGallerySlide, 5000);
 
+// ====== HAMBURGER TOGGLE ======
+const hamburger = document.getElementById("hamburger");
+const academyLinks = document.getElementById("academyLinks");
+
+if (hamburger && academyLinks) {
+  hamburger.addEventListener("click", () => {
+    academyLinks.classList.toggle("show-links");
+  });
+}
+
+// ====== DROPDOWN (Courses & Training) ======
+const academyCoursesBtn = document.getElementById("academy-courses-btn");
+const academyDropdown = document.getElementById("academy-dropdown");
+
+if (academyCoursesBtn && academyDropdown) {
+  academyCoursesBtn.addEventListener("click", (e) => {
+    // Only trigger dropdown on mobile
+    if (window.innerWidth <= 960) {
+      e.preventDefault();
+      e.stopPropagation();
+      academyDropdown.classList.toggle("show-dropdown");
+    }
+  });
+
+  // Close dropdown if user clicks outside
+  document.addEventListener("click", (e) => {
+    if (
+      !academyDropdown.contains(e.target) &&
+      !academyCoursesBtn.contains(e.target)
+    ) {
+      academyDropdown.classList.remove("show-dropdown");
+    }
+  });
+}
+
