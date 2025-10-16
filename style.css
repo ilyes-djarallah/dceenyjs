@@ -2614,6 +2614,7 @@ h2 {
   /* Dropdown link styling on mobile */
   .dropdown-link {
     text-align: center;
+    color: white;
     max-width: 100%;
     padding: 10px 0;
     font-size: 14px;
@@ -3120,7 +3121,7 @@ body {
   /* Makes the text bold */
   font-size: 14px;
   /* Small size */
-  margin-top: 100px;
+  margin-top: 20px;
   /* Huge space below this line */
 }
 
