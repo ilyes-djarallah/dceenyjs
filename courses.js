@@ -162,6 +162,7 @@ function initBuyOverlay() {
 
     const name = document.getElementById("buyName").value.trim();
     const phone = document.getElementById("buyPhone").value.trim();
+    const city = document.getElementById("buyCity").value.trim();
     const type = document.getElementById("buyCourseType").value;
     const course = document.getElementById("buyCourseTitle").value.trim();
     const message = document.getElementById("buyMessage").value.trim();
@@ -181,6 +182,11 @@ function initBuyOverlay() {
         "block";
       valid = false;
     }
+    if (!city) {
+      document.querySelector("#buyCity + .buy-error-message").style.display =
+        "block";
+      valid = false;
+    }
     if (!type) {
       document.querySelector("#buyCourseType + .buy-error-message").style.display =
         "block";
@@ -189,7 +195,7 @@ function initBuyOverlay() {
 
     if (!valid) return;
 
-    const telegramMsg = `*New Course Purchase:*\n📘 Course: ${course}\n🎓 Type: ${type}\n👤 Name: ${name}\n📞 Phone: ${phone}\n📝 Message: ${
+    const telegramMsg = `*New Course Purchase:*\n📘 Course: ${course}\n🎓 Type: ${type}\n👤 Name: ${name}\n📞 Phone: ${phone}\n📍 City: ${city}\n📝 Message: ${
       message || "None"
     }`;
 

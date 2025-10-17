@@ -146,8 +146,8 @@
         <!-- Overlay Text -->
         <div class="learning-overlay-text">
           <span class="learning">Dceeny Education</span>
-          <div class="spacer"></div>
-          <span class="desc" data-translate="learningDesc"></span>
+          <!-- <div class="spacer"></div> -->
+          <span class="learning-desc" data-translate="learningDesc"></span>
         </div>
 
         <!-- Down Arrow Icon -->
@@ -527,6 +527,15 @@
               </label>
               <input type="tel" id="buyPhone" name="buyPhone" placeholder="Enter your phone number" required />
               <span class="buy-error-message" data-translate="phoneNumReq">Phone number is required.</span>
+            </div>
+            <!-- City -->
+            <div class="buy-input-group">
+              <label for="buyCity" class="buy-input-label">
+                <span data-translate="city">Phone Number</span>
+                <span class="buy-required">*</span>
+              </label>
+              <input type="text" id="buyCity" name="buyCity" placeholder="Where do you live?" required />
+              <span class="buy-error-message" data-translate="phoneNumReq">City is required.</span>
             </div>
 
             <!-- Selected course (auto filled) -->
