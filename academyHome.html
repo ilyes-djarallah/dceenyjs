@@ -147,7 +147,7 @@
         <div class="learning-overlay-text">
           <span class="learning">Dceeny Education</span>
           <div class="spacer"></div>
-          <span class="desc">Training courses and education from a top interior design studio</span>
+          <span class="desc" data-translate="learningDesc"></span>
         </div>
 
         <!-- Down Arrow Icon -->
@@ -165,14 +165,15 @@
           </svg>
         </div>
       </div>
-      <section class="results-banner">
-  <h2>What will your results be</h2>
-</section>
-
-      <!-- ===============================
+            <!-- ===============================
      SECOND SLIDESHOW SECTION
      =============================== -->
-<section class="gallery-slider">
+      <!-- <section class="results-banner">
+  <h2>What will your results be</h2>
+</section> -->
+
+
+<!-- <section class="gallery-slider">
   <div class="gallery-wrapper">
     <div class="gallery-slide active">
       <img src="assets/images/projects/private/CheragaTwo/cam 001.jpg" alt="Gallery 1" />
@@ -222,9 +223,9 @@
         Stay updated with the latest tools and techniques in 3D interior design through continuous learning.</p>
     </div>
 
-    
+     -->
     <!-- Bottom Overlay (gradient + controls) -->
-    <div class="gallery-bottom-overlay">
+    <!-- <div class="gallery-bottom-overlay">
       <p class="gallery-caption"></p>
       <div class="gallery-controls">
         <button class="gallery-prev">
@@ -267,7 +268,7 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
 
       <div class="page-container">
       <!-- Page Header -->
@@ -278,7 +279,7 @@
           SketchUp, D5 Render, and Unreal Engine.
         </p>
         <!-- Top Search and Filter Controls -->
-        <div class="controls-top">
+        <!-- <div class="controls-top">
           <div class="search-wrap">
             <label for="search" class="sr-only">Search courses</label>
             <input
@@ -301,9 +302,9 @@
               <button class="chip" data-sof="unreal">Unreal</button>
             </div>
           </div>
-        </div>
+        </div> -->
       </header>
-
+      <div class="spacer"></div>
       <!-- Option A — Grid with top filters -->
       <section id="option-a" class="courses-section">
         <div class="courses-grid" id="coursesGridA">
@@ -461,7 +462,7 @@
         </div>
         </div>
       </section>
-      <section id="option-b" class="courses-with-sidebar hide">
+      <!-- <section id="option-b" class="courses-with-sidebar hide">
         <aside class="sidebar">
           <div class="sidebar-group">
             <h3>Filter by software</h3>
@@ -500,15 +501,80 @@
         <div class="sidebar-content">
           <div class="courses-grid" id="coursesGridB"></div>
         </div>
-      </section>
+      </section> -->
+      
+      <!-- ==============================
+     BUY COURSE OVERLAY
+     ============================== -->
+      <div class="buy-overlay" id="buyOverlay">
+        <div class="buy-form-wrapper">
+          <form id="buyCourseForm">
+            <!-- Name -->
+            <div class="buy-input-group">
+              <label for="buyName" class="buy-input-label">
+                <span data-translate="fName">Full Name</span>
+                <span class="buy-required">*</span>
+              </label>
+              <input type="text" id="buyName" name="buyName" placeholder="Enter your full name" required />
+              <span class="buy-error-message" data-translate="fNameReq">Full name is required.</span>
+            </div>
+
+            <!-- Phone -->
+            <div class="buy-input-group">
+              <label for="buyPhone" class="buy-input-label">
+                <span data-translate="phoneNum">Phone Number</span>
+                <span class="buy-required">*</span>
+              </label>
+              <input type="tel" id="buyPhone" name="buyPhone" placeholder="Enter your phone number" required />
+              <span class="buy-error-message" data-translate="phoneNumReq">Phone number is required.</span>
+            </div>
+
+            <!-- Selected course (auto filled) -->
+            <div class="buy-input-group">
+              <label for="buyCourseTitle" class="buy-input-label">Selected Course</label>
+              <input type="text" id="buyCourseTitle" name="buyCourseTitle" readonly />
+            </div>
+
+            <!-- Course type selector -->
+            <div class="buy-input-group">
+              <label for="buyCourseType" class="buy-input-label">Choose Course Type</label>
+              <select id="buyCourseType" name="buyCourseType" required>
+                <option value="" disabled selected>Select a type</option>
+                <option value="files">Course as files</option>
+                <option value="online">Course online (Zoom live)</option>
+                <option value="classroom">Presence in classroom</option>
+              </select>
+              <span class="buy-error-message">Please select a course type.</span>
+            </div>
+
+            <!-- Extra message -->
+            <div class="buy-input-group">
+              <label for="buyMessage" class="buy-input-label">Additional Notes (optional)</label>
+              <textarea id="buyMessage" name="buyMessage" rows="3" placeholder="Write any note..."></textarea>
+            </div>
+
+            <!-- Buttons -->
+            <div class="buy-buttons-row">
+              <button type="button" class="buy-close-button" id="closeBuyOverlay">Close</button>
+              <button type="submit" class="buy-submit-button">Submit Purchase</button>
+            </div>
+          </form>
+
+          <!-- Thank you message -->
+          <div class="buy-thank-you" style="display:none">
+            Thank you! Your purchase request has been sent.
+          </div>
+        </div>
+      </div>
     </main>
+
+
 
     <!-- Footer -->
     <footer id="darkFooter"></footer>
 
     <!-- Scripts -->
-    <script src="scripts/courses.js"></script>
-    <script src="script.js"></script>
+    <script src="courses.js"></script>
 
   </body>
 </html>

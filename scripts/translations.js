@@ -271,7 +271,42 @@ const translations = {
 
     threeDSoft:"3D Software",
     twoDSoft:"2D Software",
+
+
+    learningDesc:"Training courses and education from a top interior design studio",
   },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -573,7 +608,59 @@ const translations = {
     
     threeDSoft:"Logiciels 3D",
     twoDSoft:"Logiciels 2D",
+
+
+
+    learningDesc:"Formations et enseignement d’un des meilleurs studios de design d’intérieur",
   },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -854,6 +941,16 @@ const translations = {
 
     threeDSoft:"برامج 3دي",
     twoDSoft:"برامج 2دي",
+
+
+    learningDesc:"دورات تدريبية وتعليم من أحد أفضل استوديوهات التصميم الداخلي",
+
+
+  
+
+
+
+
   },
 };
 

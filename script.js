@@ -338,14 +338,14 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   // Buy button demo
-  document.body.addEventListener("click", (e) => {
-    const btn = e.target.closest(".buy-btn");
-    if (!btn) return;
-    e.preventDefault();
-    const card = btn.closest(".course-card");
-    const title = card?.querySelector(".course-title")?.textContent || "Course";
-    alert(`Buying: ${title}`);
-  });
+  // document.body.addEventListener("click", (e) => {
+  //   const btn = e.target.closest(".buy-btn");
+  //   if (!btn) return;
+  //   e.preventDefault();
+  //   const card = btn.closest(".course-card");
+  //   const title = card?.querySelector(".course-title")?.textContent || "Course";
+  //   alert(`Buying: ${title}`);
+  // });
 
   applyAllFilters();
 });

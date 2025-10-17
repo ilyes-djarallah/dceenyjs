@@ -2422,7 +2422,7 @@ h2 {
 .darkNavbar-logo svg {
   flex: 1;
   /* width: 200px; */
-  height: 60px;
+  height: 50px;
   cursor: pointer;
   direction: ltr !important;
 }
@@ -3161,7 +3161,7 @@ body {
   }
 
   .learning-overlay-text {
-    top: 20%;
+    top: 50%;
     left: 50%;
   }
   .learning {
@@ -3559,4 +3559,116 @@ body {
   margin: 0;
   text-align: center;
   letter-spacing: 0.5px;
+}
+
+
+/* ==============================
+   BUY COURSE OVERLAY STYLES
+   ============================== */
+.buy-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(6px);
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.buy-form-wrapper {
+  background: #111;
+  padding: 30px;
+  border-radius: 16px;
+  width: 90%;
+  max-width: 480px;
+  color: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.buy-input-group {
+  margin-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+}
+
+.buy-input-label {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #fff;
+}
+
+.buy-input-group input,
+.buy-input-group select,
+.buy-input-group textarea {
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(255,255,255,0.2);
+  background: #1a1a1a;
+  color: #fff;
+  font-size: 14px;
+  outline: none;
+  transition: border 0.3s;
+}
+
+.buy-input-group input:focus,
+.buy-input-group select:focus,
+.buy-input-group textarea:focus {
+  border-color: #fff;
+}
+
+.buy-required {
+  color: #ff5555;
+}
+
+.buy-error-message {
+  color: #ff6961;
+  font-size: 12px;
+  display: none;
+  margin-top: 4px;
+}
+
+.buy-buttons-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+.buy-close-button,
+.buy-submit-button {
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.buy-close-button {
+  background: #444;
+  color: #fff;
+}
+
+.buy-close-button:hover {
+  background: #666;
+}
+
+.buy-submit-button {
+  background: #fff;
+  color: #000;
+}
+
+.buy-submit-button:hover {
+  background: #f0f0f0;
+}
+
+.buy-thank-you {
+  text-align: center;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 500;
 }
